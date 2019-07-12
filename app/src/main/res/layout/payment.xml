@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sel_clothes"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/payment"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            app:srcCompat="@drawable/button" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- **** Place Your Content Here **** -->
+
+        <View android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorBar"
+            android:text="@string/finish"
+            android:drawableRight="@drawable/icons"/>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

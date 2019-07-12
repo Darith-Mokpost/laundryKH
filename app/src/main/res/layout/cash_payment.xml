@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cash_payment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textbox"
+            android:ems="10"
+            android:hint="5000"
+            android:inputType="textPersonName" />
+
+        <ImageButton
+            android:id="@+id/btnDollor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_cash"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+
+        <ImageButton
+            android:id="@+id/btnRiel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_cash"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark_focused" />
+    </LinearLayout>
+
+</LinearLayout>
