@@ -17,8 +17,17 @@ android {
         }
     }
 }
-
+ext {
+    retrofitV = '2.6.0'
+    okhttpV = '3.12.1'
+}
 dependencies {
+    //Requests
+    implementation "com.squareup.retrofit2:retrofit:$retrofitV"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitV"
+    implementation "com.google.code.gson:gson:2.8.5"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpV"
+
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'

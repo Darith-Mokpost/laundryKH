@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">LaundryKH</string>
     <!--<string-array name="code_phone_number">-->
-        <!--<item>Choose your country</item>-->
-        <!--<item>+855</item>-->
-        <!--<item>+93</item>-->
-        <!--<item>+374</item>-->
-        <!--<item>+994</item>-->
-        <!--<item>+973</item>-->
-        <!--<item>+880</item>-->
-        <!--<item>+975</item>-->
+    <!--<item>Choose your country</item>-->
+    <!--<item>+855</item>-->
+    <!--<item>+93</item>-->
+    <!--<item>+374</item>-->
+    <!--<item>+994</item>-->
+    <!--<item>+973</item>-->
+    <!--<item>+880</item>-->
+    <!--<item>+975</item>-->
     <!--</string-array>-->
 
     <string name="sel_locat">Select Location</string>
