@@ -11,7 +11,6 @@
     android:gravity="center"
     android:layout_gravity="center"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".Fragments.LoginFragment">
     <RelativeLayout
         android:id="@+id/RL"
@@ -24,12 +23,12 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             android:layout_above="@+id/LL"
             android:layout_marginTop="200dp"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/icon" />
+            android:src="@mipmap/icon_screen" />
 
         <LinearLayout
             android:id="@+id/LL"
