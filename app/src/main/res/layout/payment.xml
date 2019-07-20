@@ -54,8 +54,7 @@
             android:layout_gravity="bottom"
             android:background="@color/colorPrimary"
             android:textColor="@color/colorBar"
-            android:text="@string/finish"
-            android:drawableRight="@drawable/icons"/>
+            android:text="@string/finish" />
 
     </FrameLayout>
 

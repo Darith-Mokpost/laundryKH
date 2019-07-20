@@ -41,7 +41,7 @@ public class RegistrationFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view =  inflater.inflate(R.layout.activity_screen_signup, container, false);
-        nameInput = view.findViewById(R.id.etNama);
+        nameInput = view.findViewById(R.id.etName);
         emailInput = view.findViewById(R.id.etEmail);
         phoneInput = view.findViewById(R.id.etPhone);
         passwordInput = view.findViewById(R.id.etPassword);

@@ -1,81 +1,115 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@drawable/background_gradient"
-    tools:context=".ScreenSignup">
-
-    <LinearLayout
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragments.LoginFragment">
+    <RelativeLayout
+        android:id="@+id/RL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:gravity="center"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        tools:context=".Fragments.LoginFragment">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="24sp"
-            android:textColor="#fff"
-            android:fontFamily="sans-serif"
-            android:text="REGISTER"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_above="@+id/LL"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_screen" />
 
-        <EditText
-            android:id="@+id/etNama"
-            android:layout_marginTop="8dp"
+        <LinearLayout
+            android:id="@+id/LL"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nama"
-            android:textColorHint="#80FFFFFF"
-            android:padding="8dp"
-            android:inputType="textPersonName"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background_white"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:paddingLeft="25dp"
+            android:paddingTop="25dp"
+            android:paddingRight="25dp">
 
-        <EditText
-            android:id="@+id/etEmail"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:textColorHint="#80FFFFFF"
-            android:padding="8dp"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:fontFamily="sans-serif"
+                android:text="REGISTER"/>
 
-        <EditText
-            android:id="@+id/etPhone"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:textColorHint="#80FFFFFF"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"
-            android:text="Phone Number" />
+            <EditText
+                android:id="@+id/etName"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="#85000000"
+                android:padding="8dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:textColor="#B2000000"/>
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:textColorHint="#80FFFFFF"
-            android:inputType="textPassword"
-            android:padding="8dp"
-            android:background="@drawable/bg_rectangle_edittext"
-            android:textColor="#80FFFFFF"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="#85000000"
+                android:padding="8dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:textColor="#B2000000"/>
 
-        <Button
-            android:id="@+id/btnRegister"
-            android:layout_marginTop="8dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#FFF"
-            android:text="REGISTER"
-            android:background="@drawable/bg_rectangle_button"/>
-    </LinearLayout>
-</RelativeLayout>
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColorHint="#85000000"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:textColor="#B2000000"
+                android:text="Phone Number" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#85000000"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:background="@drawable/bg_rectangle_edittext"
+                android:textColor="#B2000000"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_marginTop="38dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="REGISTER"
+                android:background="@drawable/bg_rectangle_button"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

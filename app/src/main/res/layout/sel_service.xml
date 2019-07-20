@@ -48,8 +48,7 @@
             android:layout_gravity="bottom"
             android:background="@color/colorPrimary"
             android:textColor="@color/colorBar"
-            android:text="@string/next"
-            android:drawableRight="@drawable/icons"/>
+            android:text="@string/next" />
 
     </FrameLayout>
 
