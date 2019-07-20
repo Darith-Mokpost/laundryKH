@@ -24,6 +24,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.example.laundrykh.MainActivity.preConfig;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,13 +82,13 @@ public class LoginFragment extends Fragment {
         serviceApi = RetrofitClient.getApiClient().create(ServiceApi.class);
 
         if (TextUtils.isEmpty(Email)){
-            MainActivity.preConfig.displayToast("Your email is required.");
+            preConfig.displayToast("Your email is required.");
         } else if (!Patterns.EMAIL_ADDRESS.matcher(Email).matches()) {
-            MainActivity.preConfig.displayToast("Invalid email");
+            preConfig.displayToast("Invalid email");
         } else if (TextUtils.isEmpty(Password)){
-            MainActivity.preConfig.displayToast("Password required");
+            preConfig.displayToast("Password required");
         } else if (Password.length() < 6){
-            MainActivity.preConfig.displayToast("Password  may be at least 6 characters long.");
+            preConfig.displayToast("Password  may be at least 6 characters long.");
         } else {
             Call<User> userCall = serviceApi.doLogin(Email, Password);
             userCall.enqueue(new Callback<User>() {
@@ -94,11 +96,11 @@ public class LoginFragment extends Fragment {
                 public void onResponse(Call<User> call, Response<User> response) {
                     Log.e("Response",response.message());
                     if (response.body().getResponse().equals("ok")){
-                        MainActivity.preConfig.writeLoginStatus(true); // set login status in sharedPreference
+                        preConfig.writeLoginStatus(true); // set login status in sharedPreference
                         loginFormActivityListener.loginUser(
                                 response.body().getName());
                     } else if (response.body().getResponse().equals("login_failed")){
-                        MainActivity.preConfig.displayToast("Error. Login Failed");
+                        preConfig.displayToast("Error. Login Failed");
                         emailInput.setText("");
                         passwordInput.setText("");
                     }

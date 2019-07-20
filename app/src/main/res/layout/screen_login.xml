@@ -6,10 +6,10 @@
     android:id="@+id/SV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="0dp"
-    android:layout_marginEnd="0dp"
+    android:fillViewport="true"
     android:background="@drawable/background_gradient"
     android:gravity="center"
+    android:layout_gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".Fragments.LoginFragment">
@@ -17,11 +17,9 @@
         android:id="@+id/RL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
         android:gravity="center"
+        android:fillViewport="true"
         android:orientation="vertical"
-        android:padding="16dp"
         tools:context=".Fragments.LoginFragment">
 
         <ImageView
@@ -29,9 +27,8 @@
             android:layout_width="105dp"
             android:layout_height="105dp"
             android:layout_above="@+id/LL"
-            android:layout_centerInParent="true"
+            android:layout_marginTop="200dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="-182dp"
             android:src="@drawable/icon" />
 
         <LinearLayout
@@ -42,9 +39,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background_white"
             android:orientation="vertical"
             android:layout_centerInParent="true"
