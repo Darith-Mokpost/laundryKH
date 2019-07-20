@@ -1,23 +1,39 @@
 <resources>
     <string name="app_name">LaundryKH</string>
-    <!--<string-array name="code_phone_number">-->
-    <!--<item>Choose your country</item>-->
-    <!--<item>+855</item>-->
-    <!--<item>+93</item>-->
-    <!--<item>+374</item>-->
-    <!--<item>+994</item>-->
-    <!--<item>+973</item>-->
-    <!--<item>+880</item>-->
-    <!--<item>+975</item>-->
-    <!--</string-array>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    ////CODING
+    <string name="pref_file">com.example.preference_file</string>
+    <string name="pref_login_status">com.example.preference_login_status</string>
+    <string name="pref_username">com.example.preference_username</string>
+    <string name="pref_bid">com.example.preference_bid</string>
+    <string name="pref_title">com.example.preference_title</string>
+    <string name="pref_genre">com.example.preference_genre</string>
+    <string name="pref_pyear">com.example.preference_pyear</string>
+    <string name="pref_qty">com.example.preference_qty</string>
+    <string name="pref_price">com.example.preference_price</string>
 
     <string name="sel_locat">Select Location</string>
     <string name="sel_this_locat">Select This Location</string>
     <string name="sel_service">Select Service</string>
     <string name="sel_service_unit">Select Clothes</string>
+    <string name="tab_title_pickup">PickUp</string>
+    <string name="plz_sel_date">Please Choose Your Date for PickUp</string>
+    <string name="sel_date_pickup">Choose Date for PickUp</string>
+    <string name="plz_sel_time">Please Choose Your Time for PickUp</string>
+    <string name="sel_time_pickup">Choose Time for PickUp</string>
+    <string name="tab_title_delivery">Delivery</string>
     <string name="payment">Payment</string>
     <string name="next">Next</string>
     <string name="finish">Finish</string>
     <string name="cash_payment">How many do you want to spend ?</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>
